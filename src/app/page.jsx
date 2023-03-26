@@ -1,5 +1,6 @@
 import '../../assets/styles/main.scss'
 import { LogoIcon } from "../../assets/icon-libary";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -15,14 +16,12 @@ export default function Home() {
         <h3>
           Ready to watch? Enter your email to create or restart your membership.
         </h3>
-        <button className='content-btn'>
-          Get Started
-        </button>
+        <Link href={'/movies'}>
+          <button className='content-btn'>
+            Get Started
+          </button>
+        </Link>
       </div>
-
-
-
-
 
     </section>
   )
